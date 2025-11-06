@@ -6,4 +6,7 @@
     </style>
 
     <style name="Theme.NiceStart" parent="Base.Theme.NiceStart" />
+
+
+    <style name="Theme.NiceStart.ActionBar" parent="Theme.Material3.DayNight" />
 </resources>

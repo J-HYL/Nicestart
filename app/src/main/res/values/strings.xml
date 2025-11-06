@@ -4,4 +4,10 @@
     <string name="btn_login_singup">Sing up</string>
     <string name="et_login_password">Password</string>
     <string name="et_login_user">Username</string>
+    <string name="et_signup_email">Correo electrónico</string>
+    <string name="et_signup_password">Contraseña</string>
+    <string name="et_signup_confirm_password">Confirmar contraseña</string>
+    <string name="btn_signup_register">Registrarse</string>
+    <string name="btn_signup_login">¿Ya tienes cuenta? Inicia sesión</string>
+
 </resources>
