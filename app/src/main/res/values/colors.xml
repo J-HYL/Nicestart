@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="color_bck">#09857B</color>
+    <color name="color_srf">#123840</color>
+
+    <color name="text_primary">#E0E3E7</color>
+    <color name="text_secondary">#A1A2A6</color>
+
+    <color name="color_accent_primary">#C8D5ED</color>
+    <color name="color_accent_text">#00325A</color>
+
+    <color name="azulOscuro">#0F1338</color>
+
+</resources>

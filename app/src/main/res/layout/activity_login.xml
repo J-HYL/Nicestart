@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:paddingVertical="48dp"
+    tools:context=".LoginActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd_login_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gd_login_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <ImageView
+        android:id="@+id/iv_login_logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_action_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_login_user"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@id/gd_login_end"
+        app:layout_constraintStart_toStartOf="@id/gd_login_start"
+        app:layout_constraintTop_toBottomOf="@id/iv_login_logo">
+
+        <EditText
+            android:id="@+id/et_login_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.65"
+            android:background="@color/white"
+            android:drawableStart="@drawable/ic_user"
+            android:hint="@string/et_login_user" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_login_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@id/gd_login_end"
+        app:layout_constraintStart_toStartOf="@id/gd_login_start"
+        app:layout_constraintTop_toBottomOf="@id/til_login_user"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/et_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.65"
+            android:background="@color/white"
+            android:drawableStart="@drawable/ic_password"
+            android:hint="@string/et_login_password" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login_login"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/btn_custom"
+        android:onClick="openMain"
+        android:padding="14dp"
+        android:text="@string/btn_login_login"
+        android:textColor="@color/color_accent_text"
+        app:layout_constraintEnd_toEndOf="@id/gd_login_end"
+        app:layout_constraintStart_toStartOf="@id/gd_login_start"
+        app:layout_constraintTop_toBottomOf="@id/til_login_password" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login_singup"
+        style="@style/btn_outline"
+        android:padding="14dp"
+        android:text="@string/btn_login_singup"
+        app:layout_constraintEnd_toEndOf="@id/gd_login_end"
+        app:layout_constraintStart_toStartOf="@id/gd_login_start"
+
+        app:layout_constraintTop_toBottomOf="@id/btn_login_login" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
