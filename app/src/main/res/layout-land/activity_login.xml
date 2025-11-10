@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    android:paddingVertical="48dp"
     tools:context=".LoginActivity">
 
     <androidx.constraintlayout.widget.Guideline
@@ -77,28 +76,31 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_login_login"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_width="0dp"
         android:layout_marginTop="16dp"
         android:backgroundTint="@color/btn_custom"
         android:onClick="openMain"
         android:padding="14dp"
         android:text="@string/btn_login_login"
         android:textColor="@color/color_accent_text"
-        app:layout_constraintEnd_toEndOf="@id/gd_login_end"
         app:layout_constraintStart_toStartOf="@id/gd_login_start"
+        app:layout_constraintEnd_toStartOf="@id/btn_login_singup"
+        android:layout_marginEnd="5dp"
         app:layout_constraintTop_toBottomOf="@id/til_login_password" />
 
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btn_login_singup"
+        android:layout_width="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_height="wrap_content"
         style="@style/btn_outline"
+        android:onClick="openSignUp"
         android:padding="14dp"
         android:text="@string/btn_login_singup"
-        android:onClick="openSignUp"
         app:layout_constraintEnd_toEndOf="@id/gd_login_end"
-        app:layout_constraintStart_toStartOf="@id/gd_login_start"
-
-        app:layout_constraintTop_toBottomOf="@id/btn_login_login" />
+        app:layout_constraintStart_toEndOf="@+id/btn_login_login"
+        app:layout_constraintTop_toBottomOf="@id/til_login_password" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

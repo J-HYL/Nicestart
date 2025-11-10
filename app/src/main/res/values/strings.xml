@@ -9,5 +9,7 @@
     <string name="et_signup_confirm_password">Confirmar contraseña</string>
     <string name="btn_signup_register">Registrarse</string>
     <string name="btn_signup_login">¿Ya tienes cuenta? Inicia sesión</string>
+    <string name="citas_de_hoy">Citas de hoy</string>
+    <string name="_8_citas_programadas">8 citas programadas</string>
 
 </resources>

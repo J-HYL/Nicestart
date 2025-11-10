@@ -23,7 +23,6 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.8" />
 
-    <!-- Logo -->
     <ImageView
         android:id="@+id/iv_signup_logo"
         android:layout_width="100dp"
@@ -34,7 +33,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:tint="@color/white" />
 
-    <!-- Campo Nombre -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_signup_name"
         android:layout_width="0dp"
@@ -55,7 +53,6 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Campo Email -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_signup_email"
         android:layout_width="0dp"
@@ -77,7 +74,6 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Campo Contraseña -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_signup_password"
         android:layout_width="0dp"
@@ -100,7 +96,6 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Confirmar Contraseña -->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/til_signup_confirm_password"
         android:layout_width="0dp"
@@ -132,6 +127,7 @@
         android:backgroundTint="@color/btn_custom"
         android:padding="14dp"
         android:text="@string/btn_signup_register"
+        android:onClick="openMain"
         android:textColor="@color/color_accent_text"
         app:layout_constraintEnd_toEndOf="@id/gd_signup_end"
         app:layout_constraintStart_toStartOf="@id/gd_signup_start"

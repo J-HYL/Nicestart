@@ -8,5 +8,8 @@
     <style name="Theme.NiceStart" parent="Base.Theme.NiceStart" />
 
 
-    <style name="Theme.NiceStart.ActionBar" parent="Theme.Material3.DayNight" />
+    <style name="Theme.NiceStart.ActionBar" parent="Theme.Material3.DayNight" >
+        <item name="colorSurface">@android:color/transparent</item>
+        <item name="colorSurfaceContainer">@android:color/transparent</item>
+    </style>
 </resources>
