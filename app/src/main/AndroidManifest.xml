@@ -11,29 +11,30 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NiceStart">
+        <activity
+            android:name=".Splash"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <activity
-                android:name=".SignupActivity"
-                android:exported="true"
-                android:parentActivityName=".LoginActivity"
-                android:theme="@style/Theme.NiceStart.ActionBar" />
-
-            <activity
-                android:name=".LoginActivity"
-                android:exported="true"
-                android:parentActivityName=".LoginActivity" >
-                <intent-filter>
-                    <action android:name="android.intent.action.MAIN" />
-                    <category android:name="android.intent.category.LAUNCHER" />
-                </intent-filter>
-            </activity>
-
-            <activity
-                android:name=".MainActivity"
-                android:exported="false"
-                android:theme="@style/Theme.NiceStart.ActionBar"
-                android:parentActivityName=".LoginActivity"/>
-
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SignupActivity"
+            android:exported="true"
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/Theme.NiceStart.ActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:parentActivityName=".LoginActivity">
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:parentActivityName=".LoginActivity"
+            android:theme="@style/Theme.NiceStart.ActionBar" />
     </application>
 
 </manifest>
