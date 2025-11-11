@@ -48,7 +48,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Citas para hoy"
+                android:text="@string/citas_para_hoy"
                 android:textColor="@color/white"
                 android:textSize="16sp"
                 android:layout_marginTop="8dp" />
@@ -56,7 +56,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="8 programadas"
+                android:text="@string/_8_programadas"
                 android:textColor="#B3FFFFFF"
                 android:textSize="14sp" />
         </LinearLayout>

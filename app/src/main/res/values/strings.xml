@@ -11,5 +11,7 @@
     <string name="btn_signup_login">¿Ya tienes cuenta? Inicia sesión</string>
     <string name="citas_de_hoy">Citas de hoy</string>
     <string name="_8_citas_programadas">8 citas programadas</string>
+    <string name="citas_para_hoy">Citas para hoy</string>
+    <string name="_8_programadas">8 programadas</string>
 
 </resources>
