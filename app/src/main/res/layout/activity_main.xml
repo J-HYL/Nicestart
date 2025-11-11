@@ -6,8 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    android:padding="16dp"
-    tools:context=".MainActivity">
+    android:paddingHorizontal="16dp"
+    tools:context=".MainActivity"
+    android:paddingVertical="32dp">
 
     <TextView
         android:id="@+id/tv_dashboard_title"
