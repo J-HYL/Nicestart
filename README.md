@@ -1,6 +1,15 @@
-## NiceStart <img src="app/src/main/res/drawable-xxhdpi/ic_action_name.png" width="35vw">
 
-# Vista Vertical
+# NiceStart <img src="app/src/main/res/drawable-xxhdpi/ic_action_name.png" width="35vw">
+
+Este proyecto de la asignatura **Desarrollo de Interfaces** en **Desarrollo de Aplicaciones Multiplataforma (DAM)**, desarrollada con **Java** y **XML**.
+
+## Tecnologías
+- Java
+- XML
+- Android Studio
+- Git/GitHub
+
+## Vista Vertical
 
 <table>
   <tr>
@@ -15,7 +24,7 @@
   </tr>
 </table>
 
-# Vista Horizontal
+## Vista Horizontal
 
 <table>
   <tr>
