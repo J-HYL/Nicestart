@@ -6,8 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
-    android:paddingVertical="48dp"
     tools:context=".SignupActivity">
+
+    <ImageView
+        android:id="@+id/backView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gd_signup_start"
@@ -24,6 +30,7 @@
         app:layout_constraintGuide_percent="0.8" />
 
     <ImageView
+        android:layout_marginTop="48dp"
         android:id="@+id/iv_signup_logo"
         android:layout_width="100dp"
         android:layout_height="100dp"
