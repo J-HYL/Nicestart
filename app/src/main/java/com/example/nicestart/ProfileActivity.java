@@ -1,52 +1,30 @@
 package com.example.nicestart;
 
 import android.os.Bundle;
+import android.widget.ImageView;
 
-import com.google.android.material.snackbar.Snackbar;
-
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.view.View;
-
-import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
-import androidx.navigation.ui.NavigationUI;
-
-import com.example.nicestart.databinding.ActivityProfileBinding;
+import com.bumptech.glide.Glide;
 
 public class ProfileActivity extends AppCompatActivity {
-
-    private AppBarConfiguration appBarConfiguration;
-    private ActivityProfileBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activity_profile);
 
-        binding = ActivityProfileBinding.inflate(getLayoutInflater());
-        setContentView(binding.getRoot());
+        ImageView mSea = findViewById(R.id.backView);
 
-        setSupportActionBar(binding.toolbar);
+        Glide.with(this)
+                .load("https://img.freepik.com/foto-gratis/retrato-hombre-blanco-aislado_53876-40306.jpg?semt=ais_hybrid&w=740&q=80")
+//                        .transition(DrawableTransitionOptions.withCrossFade(100))
+                .circleCrop()
+//                                        .diskCacheStrategy(DiskCacheStrategy.ALL)
+//                .placeholder(new ColorDrawable(this.getResources().getColor(R.color.teal_200)))
+                .into(mSea);
 
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_profile);
-        appBarConfiguration = new AppBarConfiguration.Builder(navController.getGraph()).build();
-        NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
-
-        binding.fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAnchorView(R.id.fab)
-                        .setAction("Action", null).show();
-            }
-        });
-    }
-
-    @Override
-    public boolean onSupportNavigateUp() {
-        NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_profile);
-        return NavigationUI.navigateUp(navController, appBarConfiguration)
-                || super.onSupportNavigateUp();
     }
 }
