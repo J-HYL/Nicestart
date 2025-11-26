@@ -22,5 +22,9 @@
 
     <string name="jhon">Jhon Hau Yon</string>
     <string name="email">email.email.com</string>
+    <string name="download">Download</string>
+    <string name="copy">Copy</string>
+    <string name="panel_principal">Panel principal</string>
+    <string name="action_settings">Action settings</string>
 
 </resources>
