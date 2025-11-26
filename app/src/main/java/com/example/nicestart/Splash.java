@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
@@ -21,7 +23,7 @@ import java.time.Instant;
 
 
 public class Splash extends AppCompatActivity {
-
+    private ImageView logoApp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -30,7 +32,13 @@ public class Splash extends AppCompatActivity {
         setContentView(R.layout.activity_splash);
         openApp();
 
+
+        logoApp = findViewById(R.id.logo);
         ImageView mSea = findViewById(R.id.backView);
+
+        Animation myAnim = AnimationUtils.loadAnimation(this, R.anim.blink);
+
+        logoApp.startAnimation(myAnim);
 
         Glide.with(this)
                 .load("https://images.pexels.com/photos/3052361/pexels-photo-3052361.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
