@@ -34,12 +34,14 @@ public class Splash extends AppCompatActivity {
 
 
         logoApp = findViewById(R.id.logo);
-        ImageView mSea = findViewById(R.id.backView);
 
         Animation myAnim = AnimationUtils.loadAnimation(this, R.anim.blink);
-
         logoApp.startAnimation(myAnim);
 
+
+        ImageView mSea = findViewById(R.id.backView);
+
+        //CAMBIAR FONDO POR UNA IMAGEN, TIENE Q ESTAR IMPORTADO EN EL GRANDLE
         Glide.with(this)
                 .load("https://images.pexels.com/photos/3052361/pexels-photo-3052361.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
 //                        .transition(DrawableTransitionOptions.withCrossFade(100))

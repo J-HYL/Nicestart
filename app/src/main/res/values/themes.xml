@@ -3,6 +3,7 @@
     <style name="Base.Theme.NiceStart" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowIsTranslucent">true</item><!--PARA QUITAR EL LOGO DE ANDROID AL ABRIR-->
     </style>
 
     <style name="Theme.NiceStart" parent="Base.Theme.NiceStart" />

@@ -17,6 +17,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import es.dmoral.toasty.Toasty;
+
 public class MainActivity extends AppCompatActivity {
     private SwipeRefreshLayout swipeLayout;
     @Override
@@ -66,8 +68,10 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
         if (id == R.id.camera) {
+            /*
             Toast toast = Toast.makeText(this,"going APPBAR CAMERA",Toast.LENGTH_LONG );
-            toast.show();
+            toast.show();*/
+            Toasty.success(this, "Success!", Toast.LENGTH_SHORT, true).show();
         }
         return super.onOptionsItemSelected(item);
     }
