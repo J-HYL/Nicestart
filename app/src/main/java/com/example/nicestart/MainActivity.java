@@ -7,6 +7,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebChromeClient;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.TextView;
@@ -47,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         //  Webview cargando HTML para que la imagen ocupe todò el activity
 
         miVisorWeb = (WebView) findViewById(R.id.vistaweb);
-
+        /*
         String html = "<html>" +
                 "<head><style>" +
                 "html, body { margin:0; padding:0; height:100%; overflow:hidden; }" +
@@ -56,10 +58,38 @@ public class MainActivity extends AppCompatActivity {
                 "<body>" +
                 "<img src='https://thispersondoesnotexist.com' />" +
                 "</body></html>";
+        */
+        // Necesario para YouTube iframe
+        WebSettings settings = miVisorWeb.getSettings();
+
+        settings.setJavaScriptEnabled(true);
+        settings.setDomStorageEnabled(true);
+        settings.setLoadWithOverviewMode(true);
+        settings.setUseWideViewPort(true);
+
+        //miVisorWeb.loadDataWithBaseURL(null, html, "text/html", "UTF-8", null);
+        cargarImagenAleatoria();
+
+    }
+
+    public String url (){
+        int numero = (int) (Math.random() * 3) + 1;
+        return "https://hsdental.es/uploads/img/" +numero + ".jpg";
+    }
+
+    private void cargarImagenAleatoria() {
+        String nuevaUrl = url();
+        String html = "<html>" +
+                "<head><style>" +
+                "html, body { margin:0; padding:0; height:100%; overflow:hidden; }" +
+                "img { width:100%; height:100%; object-fit:cover; }" +
+                "</style></head>" +
+                "<body>" +
+                "<img src='" + nuevaUrl + "' />" +
+                "</body></html>";
 
         miVisorWeb.loadDataWithBaseURL(null, html, "text/html", "UTF-8", null);
     }
-
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
@@ -104,6 +134,21 @@ public class MainActivity extends AppCompatActivity {
             Toast toast0 = Toast.makeText(MainActivity.this, "Imagen cambiada!", Toast.LENGTH_LONG);
             toast0.show();
             miVisorWeb.reload();
+
+//            String nuevaUrl = url();
+//            String html = "<html>" +
+//                    "<head><style>" +
+//                    "html, body { margin:0; padding:0; height:100%; overflow:hidden; }" +
+//                    "img { width:100%; height:100%; object-fit:cover; }" +
+//                    "</style></head>" +
+//                    "<body>" +
+//                    "<img src='" + nuevaUrl + "' />" +
+//                    "</body></html>";
+//
+//            miVisorWeb.loadDataWithBaseURL(null, html, "text/html", "UTF-8", null);
+
+            cargarImagenAleatoria();
+
             swipeLayout.setRefreshing(false);
         }
     };
