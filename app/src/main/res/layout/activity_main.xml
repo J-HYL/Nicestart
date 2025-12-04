@@ -31,15 +31,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <TextView
-            android:id="@+id/mycontext"
-            android:gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello, you are \n in the main activity"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:textAlignment="center" />
+        <WebView
+            android:id="@+id/vistaweb"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            />
 
 
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
