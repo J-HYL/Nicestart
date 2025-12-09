@@ -38,6 +38,23 @@ Este proyecto de la asignatura **Desarrollo de Interfaces** en **Desarrollo de A
     <td><img src="Imagenes/refresh.gif" width="500vw"></td>
   </tr>
 </table>
+> **Nota:**  
+> Las imagenes las almaceno en un servidor propio y uso java para cambiarlas y conseguir el resultado propuesto en clase.
+
+## Funcionalidades
+
+<table>
+  <tr>
+    <th>NavBar</th>
+    <th>Dialog</th>
+    <th>Toasty</th>
+  </tr>
+  <tr>
+    <td><img src="Imagenes/navbar.png" width="200vw"></td>
+    <td><img src="Imagenes/dialog.png" width="200vw"></td>
+    <td><img src="Imagenes/Toasty.png" width="200vw"></td>
+  </tr>
+</table>
 
 ## Autor
 - **Jhon Hau Yon** – [https://github.com/J-HY](https://github.com/J-HYL)
