@@ -20,22 +20,22 @@ Este proyecto de la asignatura **Desarrollo de Interfaces** en **Desarrollo de A
     <th>Pantalla principal</th>
   </tr>
   <tr>
-    <td><img src="Imagenes/LoginVertical.png" width="200vw"></td>
-    <td><img src="Imagenes/SignUpVertical.png" width="200vw"></td>
-    <td><img src="Imagenes/Main.png" width="200vw"></td>
+    <td><img src="Imagenes/login.png" width="200vw"></td>
+    <td><img src="Imagenes/signUp.png" width="200vw"></td>
+    <td><img src="Imagenes/main.png" width="200vw"></td>
   </tr>
 </table>
 
-## Vista Horizontal
+## Animaciones
 
 <table>
   <tr>
-    <th>Login</th>
-    <th>Sign Up</th>
+    <th>Lottie y Splash</th>
+    <th>Refresh</th>
   </tr>
   <tr>
-    <td><img src="Imagenes/LoginHorizontal.png" width="500vw"></td>
-    <td><img src="Imagenes/SignUpHorizontal.png" width="500vw"></td>
+    <td><img src="Imagenes/splashLottie.gif" width="500vw"></td>
+    <td><img src="Imagenes/refresh.gif" width="500vw"></td>
   </tr>
 </table>
 
