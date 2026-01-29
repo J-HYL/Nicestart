@@ -1,6 +1,7 @@
 package com.example.nicestart;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.Menu;
@@ -29,6 +30,7 @@ import es.dmoral.toasty.Toasty;
 public class MainActivity extends AppCompatActivity {
     private SwipeRefreshLayout swipeLayout;
     private WebView miVisorWeb;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -72,10 +74,19 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public String url (){
-        int numero = (int) (Math.random() * 3) + 1;
-        return "https://hsdental.es/uploads/img/" +numero + ".jpg";
+
+    private int lastNumero = -1;
+
+    public String url() {
+        int numero;
+        do {
+            numero = (int) (Math.random() * 5) + 1;
+        } while (numero == lastNumero);
+
+        lastNumero = numero;
+        return "https://hsdental.es/uploads/img/" + numero + ".jpg";
     }
+
 
     private void cargarImagenAleatoria() {
         String nuevaUrl = url();
@@ -125,6 +136,12 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.camera) {
             showAlertDialogButtonClicked(MainActivity.this);
         }
+        if (id == R.id.user) {
+            // 👉 Ir a ProfileActivity
+            Intent intent = new Intent(MainActivity.this, ProfileActivity.class);
+            startActivity(intent);
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 
@@ -158,11 +175,11 @@ public class MainActivity extends AppCompatActivity {
         // setup the alert builder
         MaterialAlertDialogBuilder builder = new MaterialAlertDialogBuilder(this);
 
-        builder.setTitle("Achtung!");
-        builder.setMessage("Where do you go?");
+        builder.setTitle("Alerta!");
+        builder.setMessage("¿Quieres quedarte en la APP?");
         builder.setIcon(R.drawable.ic_action_name);
 
-        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("SI!", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 // do something like...
@@ -179,7 +196,7 @@ public class MainActivity extends AppCompatActivity {
                 finishAffinity();
             }
         });
-        builder.setNeutralButton("Can’t say", new
+        builder.setNeutralButton("No se", new
                 DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
