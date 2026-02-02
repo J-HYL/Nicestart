@@ -12,6 +12,9 @@ constraintlayout = "2.2.1"
 navigationFragment = "2.6.0"
 navigationUi = "2.6.0"
 toasty = "1.5.2"
+navigationFragmentVersion = "2.4.2"
+navigationUiVersion = "2.9.7"
+androidxNavigationFragment = "2.9.7"
 
 [libraries]
 compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "compiler" }
@@ -28,6 +31,9 @@ navigation-fragment = { group = "androidx.navigation", name = "navigation-fragme
 navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
 swiperefreshlayout = { module = "androidx.swiperefreshlayout:swiperefreshlayout" }
 toasty = { module = "com.github.GrenderG:Toasty", version.ref = "toasty" }
+androidx-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragmentVersion" }
+androidx-navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUiVersion" }
+androidx-navigation-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "androidxNavigationFragment" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

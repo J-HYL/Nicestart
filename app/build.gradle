@@ -36,6 +36,9 @@ dependencies {
     implementation(libs.glide)
     implementation libs.navigation.fragment
     implementation libs.navigation.ui
+    implementation libs.androidx.navigation.fragment
+    implementation libs.androidx.navigation.ui
+    implementation libs.androidx.navigation.navigation.fragment
     annotationProcessor(libs.compiler)
     implementation libs.appcompat
     implementation libs.material
