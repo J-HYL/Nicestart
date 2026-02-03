@@ -35,6 +35,22 @@ Este proyecto de la asignatura **Desarrollo de Interfaces** en **Desarrollo de A
   </tr>
 </table>
 
+## Idiomas
+La aplicación incorpora compatibilidad con múltiples idiomas, ajustando automáticamente los recursos de texto según el idioma configurado en el dispositivo.
+
+<table>
+  <tr>
+    <th>Español</th>
+    <th>Ingles</th>
+    <th>Francés</th>
+  </tr>
+  <tr>
+    <td><img src="Imagenes/loginESP.png" width="200vw"></td>
+    <td><img src="Imagenes/login" width="200vw"></td>
+    <td><img src="Imagenes/loginFR" width="200vw"></td>
+  </tr>
+</table>
+
 ## Vista Vertical
 
 <table>
