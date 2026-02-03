@@ -46,8 +46,22 @@ La aplicación incorpora compatibilidad con múltiples idiomas, ajustando autom�
   </tr>
   <tr>
     <td><img src="Imagenes/loginESP.png" width="200vw"></td>
-    <td><img src="Imagenes/login" width="200vw"></td>
-    <td><img src="Imagenes/loginFR" width="200vw"></td>
+    <td><img src="Imagenes/login.png" width="200vw"></td>
+    <td><img src="Imagenes/loginFR.png" width="200vw"></td>
+  </tr>
+</table>
+
+## Soporte para Modo Oscuro
+La aplicación es compatible con el modo oscuro del sistema operativo Android. Cuando el dispositivo activa el tema oscuro, la interfaz de la aplicación se adapta automáticamente, ajustando colores y estilos para mejorar la legibilidad y la experiencia de uso en entornos con poca iluminación.
+
+<table>
+  <tr>
+    <th>Modo Claro</th>
+    <th>Modo Oscuro</th>
+  </tr>
+  <tr>
+    <td><img src="Imagenes/modoClaro.png" width="200vw"></td>
+    <td><img src="Imagenes/modoOscuro.png" width="200vw"></td>
   </tr>
 </table>
 
