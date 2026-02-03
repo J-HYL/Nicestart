@@ -1,23 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">NiceStart</string>
-    <string name="btn_iniciar_sesion">Iniciar sesión</string>
-    <string name="btn_registrarse">Registrarse</string>
-    <string name="et_contrasenna">Contraseña</string>
-    <string name="et_usuario_nombre">Nombre de usuario</string>
-    <string name="et_signup_email">Correo electrónico</string>
-    <string name="et_signup_password">Contraseña</string>
-    <string name="et_signup_confirm_password">Confirmar contraseña</string>
-    <string name="btn_signup_register">Registrarse</string>
-    <string name="btn_signup_login">¿Ya tienes cuenta? Inicia sesión</string>
-    <string name="citas_de_hoy">Citas de hoy</string>
-    <string name="_8_citas_programadas">8 citas programadas</string>
-    <string name="citas_para_hoy">Citas para hoy</string>
-    <string name="_8_programadas">8 programadas</string>
+    <string name="btn_iniciar_sesion">Se connecter</string>
+    <string name="btn_registrarse">S’inscrire</string>
+    <string name="et_contrasenna">Mot de passe</string>
+    <string name="et_usuario_nombre">Nom d’utilisateur</string>
+    <string name="et_signup_email">E-mail</string>
+    <string name="et_signup_password">Mot de passe</string>
+    <string name="et_signup_confirm_password">Confirmer le mot de passe</string>
+    <string name="btn_signup_register">S’inscrire</string>
+    <string name="btn_signup_login">Vous avez déjà un compte ? Connectez-vous</string>
+    <string name="citas_de_hoy">Rendez-vous d’aujourd’hui</string>
+    <string name="_8_citas_programadas">8 rendez-vous programmés</string>
+    <string name="citas_para_hoy">Rendez-vous pour aujourd’hui</string>
+    <string name="_8_programadas">8 programmés</string>
+
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="first_fragment_label">Premier fragment</string>
+    <string name="second_fragment_label">Deuxième fragment</string>
+    <string name="next">Suivant</string>
+    <string name="previous">Précédent</string>
 
 
     <string name="jhon">Jhon Hau Yon</string>
@@ -28,5 +30,4 @@
     <string name="action_settings">Action settings</string>
     <string name="lorem">lorem</string>
     <string name="loremIpsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis feugiat consequat dolor, sit amet fermentum augue euismod vel. Vivamus porttitor dictum augue nec pharetra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent a odio quis magna blandit semper a ac odio. Donec semper ligula ut dolor ultricies, ac tempor magna faucibus. Donec sollicitudin pellentesque lacus gravida consequat. Etiam lobortis tortor ornare, sodales nisi eget, consectetur diam. Etiam aliquam est ut risus aliquam tincidunt. Fusce pharetra eros a gravida auctor. Nulla facilisi. Cras cursus, erat id luctus mattis, enim ante tristique ante, eget tristique sapien sem quis libero. Morbi ac sem orci. Integer ullamcorper blandit faucibus. Praesent vel scelerisque turpis, sit amet sodales sapien. Pellentesque feugiat in arcu et varius. Nam bibendum massa eu purus sagittis, sed facilisis ex porttitor. Phasellus lorem magna, tristique a venenatis ac, placerat ac lectus. Nunc tincidunt consectetur elementum. Aenean iaculis quam vel mauris luctus egestas. Suspendisse pretium sem sit amet lacus consequat, euismod pellentesque arcu ultrices. Maecenas pharetra scelerisque vestibulum. Morbi suscipit odio massa, in aliquet eros pellentesque id. Etiam luctus purus ac sem posuere convallis. Proin malesuada iaculis ligula. Curabitur vel malesuada nisi, non egestas lacus. Maecenas feugiat risus turpis, at bibendum nibh aliquet eu. Nullam facilisis diam purus, eget mattis augue consequat vel. Aliquam massa mauris, auctor nec massa at, sollicitudin tempor nibh. Fusce vehicula condimentum ante, in vulputate ipsum imperdiet sed. Maecenas quam velit, dignissim eu fringilla sed, egestas vel est. Integer eget ipsum lorem. Suspendisse tincidunt eleifend felis hendrerit mattis. Nam ac bibendum sem. Duis fringilla ex risus, non viverra magna scelerisque ac. Aliquam vestibulum, velit sed commodo scelerisque, massa ante scelerisque quam, dignissim fringilla nibh justo eget arcu. Integer volutpat blandit maximus. Vestibulum vel fermentum nibh. Suspendisse scelerisque elementum rutrum. Nam vel bibendum tortor, sed cursus nibh. Quisque euismod mi augue, vel condimentum nulla efficitur ut. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec a bibendum magna. Phasellus convallis risus vel sapien ultricies scelerisque. Etiam tempor metus massa, id vulputate dui rutrum vitae. Phasellus vel nulla urna. Aliquam cursus nisl ut velit pretium feugiat. Fusce at nisi nulla. Curabitur at suscipit purus. In hac habitasse platea dictumst. Vivamus eget purus dictum, pellentesque augue non, luctus ante. Sed vitae efficitur diam. Duis sodales mi sed massa eleifend dictum.</string>
-
 </resources>

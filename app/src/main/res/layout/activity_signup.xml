@@ -56,7 +56,7 @@
             android:alpha="0.65"
             android:background="@color/white"
             android:drawableStart="@drawable/ic_user"
-            android:hint="@string/et_login_user" />
+            android:hint="@string/et_usuario_nombre" />
 
     </com.google.android.material.textfield.TextInputLayout>
 

@@ -48,7 +48,7 @@
             android:alpha="0.65"
             android:background="@color/white"
             android:drawableStart="@drawable/ic_user"
-            android:hint="@string/et_login_user" />
+            android:hint="@string/et_usuario_nombre" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -69,7 +69,7 @@
             android:alpha="0.65"
             android:background="@color/white"
             android:drawableStart="@drawable/ic_password"
-            android:hint="@string/et_login_password" />
+            android:hint="@string/et_contrasenna" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -82,7 +82,7 @@
         android:backgroundTint="@color/btn_custom"
         android:onClick="openMain"
         android:padding="14dp"
-        android:text="@string/btn_login_login"
+        android:text="@string/btn_iniciar_sesion"
         android:textColor="@color/color_accent_text"
         app:layout_constraintStart_toStartOf="@id/gd_login_start"
         app:layout_constraintEnd_toStartOf="@id/btn_login_singup"
@@ -98,7 +98,7 @@
         style="@style/btn_outline"
         android:onClick="openSignUp"
         android:padding="14dp"
-        android:text="@string/btn_login_singup"
+        android:text="@string/btn_registrarse"
         app:layout_constraintEnd_toEndOf="@id/gd_login_end"
         app:layout_constraintStart_toEndOf="@+id/btn_login_login"
         app:layout_constraintTop_toBottomOf="@id/til_login_password" />
